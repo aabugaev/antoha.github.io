@@ -521,11 +521,11 @@ body {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?wk6ale');
-  src:  url('fonts/icomoon.eot?wk6ale#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?wk6ale') format('truetype'),
-    url('fonts/icomoon.woff?wk6ale') format('woff'),
-    url('fonts/icomoon.svg?wk6ale#icomoon') format('svg');
+  src:  url('./fonts/icomoon.eot?wk6ale');
+  src:  url('./fonts/icomoon.eot?wk6ale#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?wk6ale') format('truetype'),
+    url('./fonts/icomoon.woff?wk6ale') format('woff'),
+    url('./fonts/icomoon.svg?wk6ale#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
