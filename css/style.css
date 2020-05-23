@@ -20,7 +20,7 @@ body {
 
 .slider {
     height: 800px;
-    background-image: url(../images/slider_img.jpg);
+    background-image: url(./images/slider_img.jpg);
     padding-left: 98px;
     position: relative;
 }
@@ -222,11 +222,11 @@ body {
 }
 
 .promo1 {
-    background-image: url(../images/promo1.jpg);
+    background-image: url(./images/promo1.jpg);
 }
 
 .promo2 {
-    background-image: url(../images/promo2.jpg);
+    background-image: url(./images/promo2.jpg);
 }
 
 .promo-exclusive {
@@ -291,7 +291,7 @@ body {
 
 .hot-deals {
     height: 800px;
-    background-image: url(../images/slider2.jpg);
+    background-image: url(./images/slider2.jpg);
     padding-left: 98px; 
     position: relative;
 }
@@ -317,7 +317,7 @@ body {
     padding-left: 98px;
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(../images/exclusive_1.jpg);
+    background-image: url(./images/exclusive_1.jpg);
     background-repeat: no-repeat;
     background-position: center right; 
 }
@@ -364,7 +364,7 @@ body {
 
 .mobile-app {
     height: 516px;
-    background-image: url(../images/app.jpg);
+    background-image: url(./images/app.jpg);
     padding-left: 98px;
 }
 
@@ -503,7 +503,7 @@ body {
     border-left: none;
     float:left; 
     margin-top: 26px;
-    background-image: url(../images/paperplane.png);
+    background-image: url(./images/paperplane.png);
     background-repeat: no-repeat; 
     background-position: center;
 }
