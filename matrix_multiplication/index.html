@@ -1,1 +1,27 @@
-
+Matrix questions and usecases
+Regression (ols)
+Synthetic control optimisation (package)
+Gradient descent and neural networks
+Felipe methhod for transition
+Is computational optimisation done by matrices? (Or by regular numbers?)
+Why matrices should not be convenient?
+	⁃	by matrix alone you cannot tell what it does
+	⁃	Neither you can judge by a specific element (in theory you can, but it is so inconvenient given it can be transposed, etc)
+	⁃	You have to remember more rules and properties which are so complex
+	⁃	Multiplication is not straightforward (result depends on the side where you multiply => you have to follow what author is doing)
+	⁃	Given I have a matrix (or expression containing matrices, how do I interpret the result?) - you normally want to have a number example
+	⁃	Why multiply vector by matrix if you could just multiply each element of vector by other number (and essentially get same result)
+——-
+Q:We are often multiplying matrix by vector.
+But why need complex multiplication by matrix, if we could just multiply the vector by some other numbers and get same result?
+A:When multiplying matrix by a vector, you are assuming that all of the elements of the vector can participate in creating the elements of a new vector.
+Q: But when is it necessary in life? Why is it a good application?
+Say in regression, you multiply Xb.
+(X - matrix, b - vector with coefficients)
+In geometry linear algebra theory, vector is a unit, and matrix is like a function. We multiply vector by matrix to get new vector
+But in regression, you can assume b as function and X as some dataset. (So interpretation is vice versa to theoretical approach)
+——
+OLS matrix proof - watch at stat.cmu.edu lecture 13
+(Solved) How do I prove the arithmetic of matrix myself?
+Rules I found for myself:
+	⁃	look at the starting expressions, often from them you can derive what is possible (because starting expression is an assumption) (not to get confused about what can be compatible to what)
