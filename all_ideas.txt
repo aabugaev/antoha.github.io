@@ -1,1 +1,64 @@
+Some specific stats questions
+How is uncertainty evaluated in classical regression?
+How is uncertainty evaluated in Bayes stats
+How we handle uncertainty on user level (one sampled t test)
+If I want to control for a confounder, is it okay to just choose a sample of the same proportion as confounder (say, 60%male / 40% female)
+How we treat uncertainty in time series
+Maximum likelihood and joint distributions
+Cobb douglas function is multiplicative
+But in log it is additive
+Does it mean that coefficients are independent?
+There was some article about matrix derivatives
+No degrees of freedom in matrix formula for variance. But they are in other formulas
+Why do we use XXt? Why do we need to combine together Xs?
+If my model is just multiplicative, how would I evaluate uncertainty?
+If I have a power model?
+Каким образом вопрос observational-causal сводится к фильтрации (по confounder-у)
+Fixed effects vs random effects?
+Why can we interpret P(x) or even P(x|a) as distribution? And can we?
+Conditional probability: why we divide by P(B)? ( divide by number 0<x<1)
+When we use the formula to calculate uncertainty for regression, we use degrees of freedom. But in matrix form we do not. How so?
+What happens if you delete intercept from regression
+Error term - assumption level, unobserved
+Residuals - are in data
+Residuals in OLS always spherical?
+What is a moment in statistics?
+(Interesting when connected to degrees of freedom)
+! You are not trying to explain variation in Y if researching causal inference
+Problems with degrees of freedom explanation:
 
+start speaking linear algebra
+Explain the independent pieces of information part and say that we have to adjust by n-1). but never why it is an n-1, not n-3, not n/2 or whatever.
+Never explain why we should even think of independence of those pieces of information. Why do we care?
+Answer is somewhere in variance decomposition!
+Answer: each member of the sample has variance sigma. Total variance should be n*sigma. When we take the average out, it  becomes (n-1)*sigma.
+Also use the peculiarity of the mean to show: (xi-avgx)^2
+Avgx^2 + var = xi^2
+Это нормализация? Поднятие дисперсии до шкалы иксов?
+Линейно ли уменьшается uncertainty с увеличением выборки?
+Effects over time - how relates to experiment
+Sample ratio mismatch
+Degrees of freedom v2:
+Почему важно не n, а степени свободы
+Складываем ли мы дисперсию каждого из n и дисперсию среднего? И если да, то почему?
+Idea: forget about degrees of freedom.
+Just know that
+(xi-xmean)^2 = (n-1)sigma (n-1 degree of freedom). Would be all n degrees of freedom if used m instead of mu
+And that
+(xmean -mu)^2 = sigma/n (alwyays one degree of freedom. When looking for chisq you will be subtracting just one mean from your mu)
+Any difference from mean is also random value.
+So, we can square the difference and get chisq distribution
+Article by Knox and Lowe and Mummolo - they suggest bounds to a collider bias. But how?
+In multiple regression a coefficient is just like a regression of residuals on your X. But why and how does it work
+And how is it different to instrumental variables
+Why n*chisq is not the multiple of squared mean differences (but chisq with n degrees of freedom)
+Think about it:
+variances add, standard deviations don’t.
+https://stats.stackexchange.com/questions/118/why-square-the-difference-instead-of-taking-the-absolute-value-in-standard-devia
+В некоторых источниках распределние называют X, а в некоторых - P(x)
+Вопрос:
+При оценке population variance мы используем sample variance. Но почему без confidence intervals? Мы могли бы их получить через chisq?
+====
+Почему когда смотрим на распределение, измеряем размер в std, а не в variance? Можно ли выразить confidence intervals с помощью variance, а не std (0,95 = 1.96*sigma (это связано с линейностью?)
+Variance of sampling distribution of the SUM is n*var. variance of sampling distribution of the MEAN is var/n. The former grows with n, while the latter decreases. How is that? Do we not get any advantage for larger n if we measure the sum(hints: SUM is always bigger than MEAN, so gives even bigger intervals when squared). (Also: What kind of mu do you measure when working with sum?)
+Confidence intervals for experiments in statistics split by day. Intervals are expected to decrease (Variance of sampling distribution of the mean), but do they?
