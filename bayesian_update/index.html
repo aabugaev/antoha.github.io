@@ -1,10 +1,47 @@
 Article Bayesian update
 
-take a prior. It is a distribution. It is distributed all across the x (returning some probability for each x)
-Obtain likelihood. It is also a distribution. All across the x. (Think about drawing prior and real data together or for each observation?)
-The denominator is just the sum of prior*likelihood across all possible x (called marginal)
+P(parameter|data) = prior*likelihood/marginal
+
+Imagine you have some parameter x (can be probability or CPA (cost per acquisition) or anything)
+
+1) Take a prior. It is a distribution. It is distributed all across the possible values of x (prior returns some probability for each x)
+2) Obtain likelihood. It is also a distribution. All across the x. Question - is it the distribution of your data?
+
+3) Multiply likelihood*prior. It is done by iterating over all values of x and multiplying probability(prior) by probability(likelihood) accordingly.
+
+4) The denominator is just the sum of prior*likelihood across all possible x (called marginal)
+
 One shift is that you should think about expressions like P() not as numbers but as distributions
 Open questions:
 	⁃	do not understand how it updates
 	⁃	Do not understand how it relates to simpler Bayes examples
 	⁃	In general Bayes form - I do not understand the physical sense of denominator
+
+
+# Description of process in R:
+
+# define grid
+p_grid <- seq( from=0 , to=1 , length.out=20 )
+p_grid
+
+# define prior
+#prior <- rep( 1 , 20 )
+#prior <- ifelse( p_grid < 0.5 , 0 , 1 )
+prior <- exp( -5*abs( p_grid - 0.5 ) )
+prior
+plot( p_grid , prior , type="b")
+
+# compute likelihood at each value in grid
+likelihood <- dbinom( 6 , size=9 , prob=p_grid )
+likelihood
+plot( p_grid , likelihood , type="b")
+
+
+# compute product of likelihood and prior
+unstd.posterior <- likelihood * prior
+unstd.posterior[3]
+prior[3]*likelihood[3]
+
+# standardize the posterior, so it sums to 1
+posterior <- unstd.posterior / sum(unstd.posterior)
+posterior
