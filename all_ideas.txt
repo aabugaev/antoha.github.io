@@ -62,3 +62,7 @@ https://stats.stackexchange.com/questions/118/why-square-the-difference-instead-
 Почему когда смотрим на распределение, измеряем размер в std, а не в variance? Можно ли выразить confidence intervals с помощью variance, а не std (0,95 = 1.96*sigma (это связано с линейностью?)
 Variance of sampling distribution of the SUM is n*var. variance of sampling distribution of the MEAN is var/n. The former grows with n, while the latter decreases. How is that? Do we not get any advantage for larger n if we measure the sum(hints: SUM is always bigger than MEAN, so gives even bigger intervals when squared). (Also: What kind of mu do you measure when working with sum?)
 Confidence intervals for experiments in statistics split by day. Intervals are expected to decrease (Variance of sampling distribution of the mean), but do they?
+
+Joint = Conditional/Marginal
+Marginal called this way because it's on the margin of the table (like those you do for Chi-SQ test)
+https://www.youtube.com/watch?v=2sErJfDLgVM&list=PLIYnk9FMYckuhx-8FdoulMoM3-1tsACzO&index=39
