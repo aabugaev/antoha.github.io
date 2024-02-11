@@ -66,3 +66,14 @@ Confidence intervals for experiments in statistics split by day. Intervals are e
 Joint = Conditional/Marginal
 Marginal called this way because it's on the margin of the table (like those you do for Chi-SQ test)
 https://www.youtube.com/watch?v=2sErJfDLgVM&list=PLIYnk9FMYckuhx-8FdoulMoM3-1tsACzO&index=39
+
+Linalg and Calculus connection
+Linalg as opportunity to do backdoor calculus
+https://www.youtube.com/watch?v=2iK3Hw2o_uo
+
+from: https://www.quora.com/What-is-the-relationship-between-linear-algebra-and-calculus
+Matrix is local approximation by linear function
+the Jacobian is precisely the matrix that represents the linear map called the total derivative
+Multi variable calculus is essentially about approximation of maps by linear maps (matrices). Linear algebra is about the structure of matrices
+Linear algebra really becomes important for differential equations.
+
