@@ -77,3 +77,10 @@ the Jacobian is precisely the matrix that represents the linear map called the t
 Multi variable calculus is essentially about approximation of maps by linear maps (matrices). Linear algebra is about the structure of matrices
 Linear algebra really becomes important for differential equations.
 
+
+Idea that I got from the course by Alex Dainyak on Discrete maths.
+Finding the number combinations can be represented as a tree and boils down to two rules:
+- if you are adding a new branch - you are adding the amount of combinations
+- if you are going down in the branch - you are multiplying the amount of combinations (like in the for loop)
+
+
